@@ -348,7 +348,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 		
 		fetchWeatherData: async () => {
 			try {
-				const response = await fetch('https://orange-space-halibut-jj5w55qrw4pr3jg55-3001.app.github.dev/api/weather');
+				const response = await fetch('https://friendly-space-bassoon-q7qgqqpvggqj3957g-3001.app.github.dev/api/weather');
 				if (!response.ok) {
 					throw new Error('Failed to fetch weather data');
 				}
