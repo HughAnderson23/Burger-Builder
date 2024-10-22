@@ -348,7 +348,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 		
 		fetchWeatherData: async () => {
 			try {
-				const response = await fetch('https://friendly-space-bassoon-q7qgqqpvggqj3957g-3001.app.github.dev/api/weather');
+				const response = await fetch(process.env.BACKEND_URL +'/api/weather');
 				if (!response.ok) {
 					throw new Error('Failed to fetch weather data');
 				}
